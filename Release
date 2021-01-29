@@ -1,9 +1,0 @@
-Origin: ToolHack
-Label: ToolHack
-Suite: stable
-Version: 1.0
-Codename: ios
-Architectures: iphoneos-arm
-Components: main
-Description: سورس رفع الادوات المكركة للتطبيقات
-Source: Lifting applications blocking tools
