@@ -1,39 +1,145 @@
 <!DOCTYPE html>
-<html >
-  <head>
-    <meta charset="UTF-8">
-    <title>Cydia Package Depiction</title>
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=0">
+<html>
+<head>
+  <link rel="stylesheet" href="/ui/vendor/mdl/material.blue-pink.min.css">
+  <script src="/ui/vendor/mdl/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script defer src="/ui/dist/bundle.js"></script>
+  <style>
+    body{
+      font-family: 'Roboto','Helvetica','Arial',sans-serif!important;
+    }
+    h4{
+      color:#757575;
+      font-weight:700;
+    }
+    .mdl-layout__header {
+      display: flex;
+    }
+    .mdl-layout-title a{
+      color:inherit;
+      text-decoration: inherit;
+    }
 
+    nav a{
+      font-weight:700;
+      padding: 0 20px;
+    }
+    .nav-path a:hover:not(.active){
+      background-color:rgba(0,0,0,0.1);
+    }
+    .nav-path a>span{
+      padding: 4px;
+    }
+    .nav-path a.active>span {
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+    }
+  .spinner {
+    -webkit-animation: rotator 1.4s linear infinite;
+            animation: rotator 1.4s linear infinite;
+  }
 
+  @-webkit-keyframes rotator {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg);
+    }
+  }
 
-        <link rel="stylesheet" href="css/style.css">
+  @keyframes rotator {
+    0% {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg);
+    }
+  }
+  .path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    -webkit-transform-origin: center;
+            transform-origin: center;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+            animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+  }
 
+  @-webkit-keyframes colors {
+    0% {
+      stroke: #4285F4;
+    }
+    25% {
+      stroke: #DE3E35;
+    }
+    50% {
+      stroke: #F7C223;
+    }
+    75% {
+      stroke: #1B9A59;
+    }
+    100% {
+      stroke: #4285F4;
+    }
+  }
 
+  @keyframes colors {
+    0% {
+      stroke: #4285F4;
+    }
+    25% {
+      stroke: #DE3E35;
+    }
+    50% {
+      stroke: #F7C223;
+    }
+    75% {
+      stroke: #1B9A59;
+    }
+    100% {
+      stroke: #4285F4;
+    }
+  }
+  @-webkit-keyframes dash {
+    0% {
+      stroke-dashoffset: 187;
+    }
+    50% {
+      stroke-dashoffset: 46.75;
+      -webkit-transform: rotate(135deg);
+              transform: rotate(135deg);
+    }
+    100% {
+      stroke-dashoffset: 187;
+      -webkit-transform: rotate(450deg);
+              transform: rotate(450deg);
+    }
+  }
+  @keyframes dash {
+    0% {
+      stroke-dashoffset: 187;
+    }
+    50% {
+      stroke-dashoffset: 46.75;
+      -webkit-transform: rotate(135deg);
+              transform: rotate(135deg);
+    }
+    100% {
+      stroke-dashoffset: 187;
+      -webkit-transform: rotate(450deg);
+              transform: rotate(450deg);
+    }
+  }
 
-
-  </head>
-
-  <body>
-
-    <body class="depiction">
-  <header>
-    <h1>Noah's Cydia/APT Repository</h1>
-  </header>
-  <main id="content" role="main">
-    <ul>
-      <li>
-      <a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://noahlittle.github.io">Add to Cydia</a>
-      </li>
-    </ul>
-    <p class="footer">Report issues to @noahacks on Twitter.</p>
-  </main>
+  </style>
+</head>
+<body>
+  <div id="container"</div>
+  <div id="footer"></div>
 </body>
-
-        <script src="js/index.js"></script>
-
-
-
-
-  </body>
 </html>
