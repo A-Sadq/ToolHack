@@ -1,0 +1,14 @@
+Package: com.laxus.alightmotion 
+Version:0.1
+Architecture: iphoneos-arm
+Maintainer: Sadq Ahmed
+Depends: mobilesubstrate
+Conflicts: iphoneos-arm
+Filename: AppHack/com.laxus.alightmotion_3.3+iOSGods.com_iphoneos-arm
+Size: 2417392 Bytes
+MD5sum: ca38f4e0f13a2bfa98ec7f0437be2418
+SHA1: fdfcae5e66ed4f19ab0714a24f3aabec9e78f0fa
+SHA256: 3edd9d1ae414a822c06d82d974e090830da54c270ef20ba7fae519753763b4bf
+Section: Tweaks
+Depiction: https://a-sadq.github.io/HackTool/ 
+Name: Alight Motion 
